@@ -4,7 +4,7 @@
 #>
 
 # 1. Cấu hình thông tin tải về
-$TargetURL = "https://giaitri321.vip/doc-truyen/truyen-hay"                # Thay bằng URL website bạn muốn clone
+$TargetURL = "https://macos27.kimi.page/"                # Thay bằng URL website bạn muốn clone
 $OutputDir = "$ENV:USERPROFILE\Desktop\cloned_site" # Thư mục lưu kết quả (Ví dụ: Desktop)
 
 # User-Agent giả lập Chrome trên Windows 10/11
