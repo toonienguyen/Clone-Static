@@ -1,4 +1,3 @@
-```powershell
 # ==============================================================================
 # STATIC SITE CLONER 4.0 INTERACTIVE
 # Windows 10/11 + PowerShell + Wget
@@ -61,6 +60,13 @@ $possiblePaths = @(
     "$env:LOCALAPPDATA\Microsoft\WinGet\Links\wget.exe",
     "$env:ProgramFiles\GNU\Wget\wget.exe",
     "$env:ProgramFiles(x86)\GNU\Wget\wget.exe"
+) + (
+    Get-ChildItem `
+        -Path "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" `
+        -Filter "wget.exe" `
+        -Recurse `
+        -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty FullName
 )
 
 foreach ($p in $possiblePaths) {
@@ -80,11 +86,16 @@ if (-not $wgetExePath) {
         --accept-package-agreements `
         --accept-source-agreements
 
-    $wgetExePath =
-        "$env:LOCALAPPDATA\Microsoft\WinGet\Links\wget.exe"
+    # Dò lại toàn bộ danh sách sau khi cài, không gán cứng 1 path
+    foreach ($p in $possiblePaths) {
+        if (Test-Path $p) {
+            $wgetExePath = $p
+            break
+        }
+    }
 }
 
-if (-not (Test-Path $wgetExePath)) {
+if (-not $wgetExePath) {
     Write-Error "Khong tim thay Wget"
     exit
 }
@@ -173,4 +184,3 @@ Write-Host ""
 Write-Host "Thu muc : $OutputDir"
 Write-Host "Log     : $LogFile"
 Write-Host ""
-```
