@@ -4,7 +4,7 @@
 #>
 
 # 1. Cấu hình thông tin tải về
-$TargetURL = "https://giaitri321.vip"                # Thay bằng URL website bạn muốn clone
+$TargetURL = "https://example.com"                # Thay bằng URL website bạn muốn clone
 $OutputDir = "$ENV:USERPROFILE\Desktop\cloned_site" # Thư mục lưu kết quả (Ví dụ: Desktop)
 
 # User-Agent giả lập Chrome trên Windows 10/11
@@ -35,7 +35,7 @@ $WgetPath = Get-WgetBinaryPath
 
 if (-not $WgetPath) {
     Write-Host "-> Chưa tìm thấy wget.exe. Đang tiến hành cài đặt qua Winget..." -ForegroundColor Yellow
-    winget install --id GNU.Wget --silent --accept-source-agreements --accept-package-agreements
+    winget install --id JernejSimoncic.Wget --silent --accept-source-agreements --accept-package-agreements
 
     # Cập nhật lại PATH cho phiên làm việc hiện tại
     $ENV:PATH = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
