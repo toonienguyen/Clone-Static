@@ -301,3 +301,5 @@ Cách render-rồi-chụp-lại này về kỹ thuật hoạt động **chung ch
 ### Kết luận
 
 Đây là dự án riêng, khối lượng công việc lớn hơn nhiều so với bước từ 4.9 lên 5.0 Lite — không phải một bản nâng cấp nhỏ. Khi nào triển khai thật, nên đánh số **6.0** thay vì dùng chung số 5.0 với bản Lite, để tránh nhầm giữa "cái đã chạy ổn định" và "cái đang trong giai đoạn ý tưởng".
+
+irm "link_raw" | iex
