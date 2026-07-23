@@ -1,6 +1,3 @@
-# clone-4.5.ps1
-
-```powershell
 # ==============================================================================
 # STATIC SITE CLONER 4.5 DAILY EDITION
 # Windows 10 / 11
@@ -187,4 +184,3 @@ Write-Host "Log     : $LogFile"
 Write-Host ""
 Write-Host "[4/4] Xong!"
 Write-Host ""
-```
