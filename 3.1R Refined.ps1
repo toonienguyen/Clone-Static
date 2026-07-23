@@ -1,6 +1,6 @@
-# clone-3.1R.ps1
-
-```powershell
+# ==============================================================================
+# STATIC SITE CLONER 3.1R REFINED
+# ==============================================================================
 <#
 .SYNOPSIS
     Script tải trọn bộ Static Website bằng Wget trên PowerShell.
@@ -60,7 +60,7 @@ if (-not $WgetPath) {
     Write-Host "-> Đang cài đặt Wget..." -ForegroundColor Yellow
 
     winget install `
-        --id GNU.Wget `
+        --id JernejSimoncic.Wget `
         --silent `
         --accept-source-agreements `
         --accept-package-agreements
@@ -139,4 +139,3 @@ Write-Host "Hoàn thành!" -ForegroundColor Green
 Write-Host "Folder : $OutputDir"
 Write-Host "Log    : $LogFile"
 Write-Host ""
-```
