@@ -1,6 +1,3 @@
-# clone-4.6.ps1
-
-```powershell
 # ==============================================================================
 # STATIC SITE CLONER 4.6
 # Windows 10 / 11
@@ -214,4 +211,3 @@ Write-Host "Folder  : $OutputDir"
 Write-Host "Files   : $FileCount"
 Write-Host "Log     : $LogFile"
 Write-Host ""
-```
