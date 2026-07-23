@@ -71,7 +71,7 @@ $wargs = @(
     "--adjust-extension",            # Tự động thêm đuôi .html/.css nếu trang web thiếu
     "--page-requisites",             # Tải đầy đủ tài nguyên đi kèm (CSS, JS, Images, Fonts)
     "--no-parent",                   # Không leo ngược lên các thư mục cha trên server
-    "--user-agent=`"$UserAgent`"",   # Giả lập Browser Chrome
+    "--user-agent=$UserAgent",       # Giả lập Browser Chrome
     "--no-check-certificate",        # Bỏ qua lỗi chứng chỉ SSL/TLS nếu có
     "--wait=1",                      # Trễ 1 giây giữa các request để tránh bị chặn/rate-limit
     "--random-wait",                 # Ngẫu nhiên thời gian chờ (0.5s - 1.5s)
