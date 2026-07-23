@@ -1,6 +1,3 @@
-# clone-4.9.ps1
-
-```powershell id="j7g2xw"
 # ==============================================================================
 # STATIC SITE CLONER 4.9 ARCHIVE EDITION
 # Windows 10 / 11
@@ -305,4 +302,3 @@ Write-Host "Report  : $SummaryLog"
 Write-Host ""
 Write-Host "Archive completed successfully."
 Write-Host ""
-```
