@@ -1,4 +1,3 @@
-```powershell
 # ==============================================================================
 # STATIC SITE CLONER 3.6 ULTIMATE
 # WGET + POWERSHELL
@@ -139,4 +138,3 @@ Write-Host "[3/3] Hoan tat!" -ForegroundColor Green
 Write-Host "Thu muc : $OutputDir"
 Write-Host "Log     : $LogFile"
 Write-Host ""
-```
